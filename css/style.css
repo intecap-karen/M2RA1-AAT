@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    z-index: 1000;
+    overflow: hidden;
+    transition: opacity 0.6s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.container.fade {
+    opacity: 0;
+}
+
+/*.link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.8);
+    padding: 10px;
+    z-index: 1000;
+} links arriba*/ 
+
+h1 {
+    font-size: 150px;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 6px black;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    color: #f0f0f0;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    color: #f0f0f0;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 6px black;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    scroll-margin-bottom: 50px;
+
+}
+
+.carousel-container {
+    position: relative;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+    top: 0;
+}
+
+.carousel-overlay-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px 10px;
+    transition: opacity 0.5s;
+}
+
+.carousel .carousel-item img {
+    filter: brightness(0.2);
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+
+}
