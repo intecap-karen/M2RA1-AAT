@@ -43,3 +43,9 @@ a {
 .btn-volver:hover {
     background-color: #555;
 }
+
+.text-modal-title {
+    color: #111;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
