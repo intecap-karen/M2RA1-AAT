@@ -17,13 +17,7 @@
 
     <?php 
     require_once("procesos_crud/conexion.php");
-    $sql="select peliculas, directores.nombre from 
-    directores INNER JOIN peliculas
-	ON directores.director_id = directores.director_id
-	INNER JOIN peliculas
-    ON directores.director_id = peliculas.director_id
-WHERE
-	directores.nombre="director_nombre";";
+    $sql="select * from peliculas";
     //ejecutar la consulta en la base de datos utilizando
     //la conexión realizada
     $ejecutar =mysqli_query($conexion, $sql);
@@ -90,7 +84,7 @@ WHERE
                     <td><?php echo $datos['nombre'];?></td>
                     <td><?php echo $datos['fecha_estreno'];?></td>
                     <td><?php echo $datos['duracion_minutos'];?></td>
-                    <td><?php echo $datos['director_nombre'];?></td>
+                    <td><?php echo $datos['director_id'];?></td>
                     <td class="d-flex flex-row">
                         <form action="procesos_crud/crud_peliculas.php" method="post" class="me-1">
                             <input type="hidden" name="hidden_codigo" id="hidden_codigo"
